@@ -4,9 +4,10 @@ import java.io.*;
     public class Client {
 
         public static void main(String[] args) {
-            String hostname = "192.168.77.104";
+            // String hostname = "192.168.77.104";
+            String hostname = "localhost";
             int port = 6969;
-            System.out.println(hostname + port);
+            System.out.println("Client Is trying to connect to "+ hostname+ ":" + port);
 
             try (Socket socket = new Socket(hostname, port)) {
 
